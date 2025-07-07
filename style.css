@@ -1,0 +1,116 @@
+/* =====  Paleta e layout global  ===== */
+:root {
+  --cor-fundo: #f4f8ff;         /* cor suave */
+  --azul-principal: #1e3d8f;
+  --azul-link: #0066cc;
+  --laranja-hover: #ff6600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem 4rem;
+  background: var(--cor-fundo);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* =====  Título  ===== */
+h1 {
+  text-align: center;
+  color: var(--azul-principal);
+  margin-bottom: 1.5rem;
+}
+
+/* =====  Parágrafo autobiográfico  ===== */
+p.bio {
+  font-size: 1.2rem;            /* fonte maior */
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+/* =====  Lista de hobbies  ===== */
+ul.hobbies {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding-left: 1.25rem;
+}
+ul.hobbies li {
+  margin-bottom: 0.8rem;        /* espaçamento maior entre itens */
+}
+
+/* =====  Imagem do hobby  ===== */
+img.hobby {
+  display: block;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;          /* bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =====  Tabela de países  ===== */
+table.paises {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #d1d9e6;
+}
+
+.tabela-scroll {
+  overflow-x: auto;
+}
+
+table.paises th,
+table.paises td {
+  border: 1px solid #d1d9e6;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+table.paises th {
+  background: #e8edff;
+  font-weight: 600;
+}
+
+/* =====  Links  ===== */
+a {
+  color: var(--azul-link);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--laranja-hover);  /* muda de cor ao passar o mouse */
+}
+
+/* =====  Botão JS  ===== */
+.btn-msg {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: var(--azul-principal);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.btn-msg:hover {
+  background: #163172;
+}
+
+#mensagem {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--azul-principal);
+}
